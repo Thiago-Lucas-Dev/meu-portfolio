@@ -1,0 +1,164 @@
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+
+}
+.cabecalho{
+    background-color: var(--cor-fundo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+
+.botoes-nav{
+    display: flex;
+    gap: 35px;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+.botoes-nav a{
+    color: var(--cor-texto);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+.linhaReta{
+    height: 1px;
+    background-color: var(--cor-destaque);
+    width: 100%;
+}
+
+.botao-LuzTema{
+    border: 2px solid var(--cor-texto);
+    padding: 20px 20px;
+}
+
+.secaoApresentacao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 90px;
+}
+
+.apresentacao-container{
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.apresentacao-container h1{
+    font-size: 80px;
+    margin: 0 auto;
+    max-width: 630px;
+    padding-bottom: 30px;
+    padding-top: 100px;
+}
+
+.linhaSuave{
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, transparent, var(--cor-destaque), transparent);
+}
+.apresentacao-container p{
+    font-size: 22px;    
+    max-width: 630px;
+    padding-left: 10px;
+}
+
+.meuNome{
+    color: var(--cor-destaque);
+}
+
+.meuNome{
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    width: 0;
+    animation: typingErasing 6s steps(12, end) infinite alternate, blink 0.75s step-end infinite;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes typingErasing {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 12ch;
+  }
+  60% {
+    width: 12ch;
+  }
+ 
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.html{
+    color: var(--cor-html);
+}
+
+.css{
+    color: var(--cor-css);
+}
+
+.js{
+    color: var(--cor-js);
+}
+
+.python{
+    color: var(--cor-python)
+}
+
+.apresentacao-foto{
+    padding-top: 15px;
+    margin-right: 100px;
+}
+
+.apresentacao-foto img {
+    background: linear-gradient(to bottom, #6300C6, #450087);
+    width: 400px;
+    border-radius: 50%;
+    border: 5px solid #8b0eff;
+}
+
+.seta-baixo img{
+    display: flex;
+    width: 60px;
+    justify-content: center;
+    margin: 10px auto;
+    margin: 160px auto;
+
+}
+
+.secaoSobre {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.sobre-container h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.sobre-container p{
+    font-size: 20px;
+    max-width: 1000px;
+    text-align: center;
+    padding: 15px 20px;
+    line-height: 1.6;
+}
