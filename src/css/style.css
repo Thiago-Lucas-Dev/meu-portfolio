@@ -143,12 +143,12 @@ body{
     color: var(--cor-texto);
     border: none;
     padding: 8px 18px;
+    transition: transform 0.3s;
     transform: scale(1);
 }
 
 .botoes-CTA button:hover{
     background: #8902ff ;
-    transition: transform 0.3s;
     transform: scale(1.10);
     box-shadow: 0px 0px 15px var(--cor-destaque);
 }
@@ -165,8 +165,7 @@ body{
     width: 60px;
     justify-content: center;
     margin: 10px auto;
-    margin: 155px auto;
-
+    margin: 150px auto;
 }
 
 .secaoSobre {
@@ -186,4 +185,36 @@ body{
     text-align: center;
     padding: 15px 20px;
     line-height: 1.6;
+}
+
+.botao-curriculo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.botao-curriculo button{
+    background: linear-gradient(to bottom, var(--cor-destaque), #6800c3);
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 15px;
+    color: var(--cor-texto);
+    border: none;
+    padding: 13px 50px;
+    transition: transform 0.3s;
+    transform: scale(1);
+}
+
+.botao-curriculo button:hover{
+    background: #8902ff ;
+    transform: scale(1.10);
+    box-shadow: 0px 0px 15px var(--cor-destaque);
+}
+
+
+.habilidades-container svg{
+    width: 100px;
+    height: 100px;
+    fill: var(--cor-destaque)
 }
