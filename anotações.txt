@@ -1,0 +1,5 @@
+ANOTAÇÕES / FAZER 
+
+    CSS:
+
+        Fazer media query 1440x900
