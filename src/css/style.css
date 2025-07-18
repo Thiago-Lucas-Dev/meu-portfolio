@@ -248,7 +248,6 @@ body{
     box-sizing: border-box;
 }
 
-
 .tecnicas-icones svg{
     width: 100px;
     height: 100px;
@@ -264,6 +263,7 @@ body{
 .habilidades-tecnicas h1{
     font-size: 50px;
     text-align: center;
+    padding-top: 200px;
 }
 
 .tecnicas-icones{
@@ -285,7 +285,16 @@ body{
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     position: relative;
+    transition: transform 0.3s;
+    transform: scale(1);
+} 
+
+.tecnicas-icones .habilidade-bloco:hover{
+    transform: scale(1.10);
+    box-shadow: 0px 0px 15px var(--cor-destaque);
 }
+
+
 
 .tecnicas-icones .habilidade-bloco ::after{
     position: absolute;
@@ -295,7 +304,6 @@ body{
     bottom: -2px;
     background: linear-gradient(to bottom, var(--cor-destaque), #6800c3);
     left: 0;
-    
 }
 
 .tecnicas-icones p{
@@ -307,6 +315,61 @@ body{
     height: 100px;
     fill: var(--cor-destaque)
 }
+
+.soft-skills{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.soft-skills h1{
+    font-size: 45px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.softSkills-icones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.softSkills-icones .habilidade-bloco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cor-habilidade-bloco);
+    width: 100%;
+    padding: 20px 0px;
+    position: relative;
+    transition: transform 0.3s;
+    transform: scale(1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.softSkills-icones .habilidade-bloco:hover{
+    transform: scale(1.10);
+    box-shadow: 0px 0px 15px var(--cor-destaque);
+}
+
+.softSkills-icones .habilidade-bloco::after{
+    position: absolute;
+    bottom: -2px;
+    content: "";
+    width: 100%;
+    height: 4px;
+    left: 0;
+     background: linear-gradient(to bottom, var(--cor-destaque), #6800c3);
+}
+
+.softSkills-icones .habilidade-bloco:nth-child(5){
+    grid-column: 2;
+}
+
 
 .projeto-imagem img{
     width: 500px;
