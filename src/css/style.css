@@ -251,3 +251,8 @@ body{
     height: 100px;
     fill: var(--cor-destaque)
 }
+
+.projeto-imagem img{
+    width: 500px;
+    height: 300px;
+}
