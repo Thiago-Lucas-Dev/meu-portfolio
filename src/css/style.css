@@ -3,6 +3,7 @@ body{
     color: var(--cor-texto);
     margin: 0;
     padding: 0;
+    max-width: 100%;
     font-family: "Nunito", sans-serif;
 
 }
@@ -176,7 +177,7 @@ body{
 }
 
 .botoes-CTA button:hover{
-    background: #8902ff ;
+    background: var(--cor-botao-hover);
     transform: scale(1.10);
     box-shadow: 0px 0px 15px var(--cor-destaque);
 }
@@ -235,15 +236,55 @@ body{
 }
 
 .botao-curriculo button:hover{
-    background: #8902ff ;
+    background: var(--cor-botao-hover);
     transform: scale(1.10);
     box-shadow: 0px 0px 15px var(--cor-destaque);
 }
+
+.secaoHabilidades{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 .tecnicas-icones svg{
     width: 100px;
     height: 100px;
     fill: var(--cor-destaque)
+}
+
+.habilidades-tecnicas{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.habilidades-tecnicas h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.tecnicas-icones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tecnicas-icones .habilidade-bloco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: var(--cor-habilidade-bloco);
+    padding: 20px 0px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    
 }
 
 .softSkills-icones svg{
