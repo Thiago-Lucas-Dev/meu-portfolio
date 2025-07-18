@@ -256,3 +256,9 @@ body{
     width: 500px;
     height: 300px;
 }
+
+.contato-imagem svg{
+    width: 100px;
+    height: 100px;
+    fill: var(--cor-destaque)
+}
