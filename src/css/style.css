@@ -302,7 +302,7 @@ body{
     height: 4px;
     width: 100%;
     bottom: -2px;
-    background: linear-gradient(to bottom, var(--cor-destaque), #6800c3);
+    background: linear-gradient(to right, var(--cor-destaque), #a300c3);
     left: 0;
 }
 
@@ -363,13 +363,35 @@ body{
     width: 100%;
     height: 4px;
     left: 0;
-     background: linear-gradient(to bottom, var(--cor-destaque), #6800c3);
+    background: linear-gradient(to right, var(--cor-destaque), #a300c3);
 }
 
 .softSkills-icones .habilidade-bloco:nth-child(5){
     grid-column: 2;
 }
 
+.projetos-container h1{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.grid-projetos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    margin: 0 auto;
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid.projetos .projeto-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
 .projeto-imagem img{
     width: 500px;
