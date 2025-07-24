@@ -3,3 +3,7 @@ ANOTAÇÕES / FAZER
     CSS:
 
         Fazer media query 1440x900
+
+        Revisar a parte do hover dos projetos,
+
+        ao passar o mouse encima do rodape dos projetos, tirar opacidade da IMAGEM 

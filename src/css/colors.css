@@ -1,9 +1,11 @@
 :root{
     --cor-destaque: #8C2CE2;
 
-    --cor-fundo: #13131F;
+    --cor-fundo: #13131f;
 
     --cor-habilidade-bloco: #212132;
+
+    --cor-fundo-projetos-tranparente: #rgba(0, 0, 0, 0.6);
 
     --cor-texto: white;
 
