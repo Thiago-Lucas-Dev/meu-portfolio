@@ -408,6 +408,7 @@ body{
 
 .projeto-hover:hover .projeto-camada-escura{
     opacity: 0;
+    animation: fade 0.3s;
 }
 
 .projeto-hover{
@@ -468,9 +469,55 @@ body{
 }
 
 .contato-imagem svg{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     fill: var(--cor-destaque)
+}
+
+.contatos-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+    padding-bottom: 20%;
+    gap: 200px;
+}
+
+.contato-imagem{
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-habilidade-bloco);
+    padding: 20px 25px;
+    border-radius: 50%;
+    transition: 0.3s;
+    transform: scale(1);
+}
+
+.contato-imagem:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+.contato-bloco{
+    width: 10%;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contato-bloco h1, .contato-bloco p{
+    text-align: center;
+    justify-content: center;
+}
+
+.contato-bloco p {
+    padding-top: -50px ;
 }
 
 .rodape {
