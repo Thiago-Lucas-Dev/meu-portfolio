@@ -406,17 +406,17 @@ body{
     overflow: hidden;
 }
 
-.projeto-imagem .projeto-camada-escura:hover{
+.projeto-hover:hover .projeto-camada-escura{
     opacity: 0;
 }
 
-.projeto-bloco{
+.projeto-hover{
     position: relative;
     transition: 0.5s;
     transform: scale(1);
 }
 
-.projeto-bloco:hover{
+.projeto-hover:hover{
     transform: scale(1.18);
     transition: 0.3s;
     cursor: pointer;
