@@ -1,4 +1,8 @@
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
@@ -30,10 +34,10 @@ body{
 }
 
 .botoes-nav{
-    scroll-behavior: smooth;
     display: flex;
     gap: 35px;
     padding: 25px;
+    position: relative;
 }
 
 .botoes-nav a{
@@ -41,11 +45,26 @@ body{
     transform: scale(1);
 }
 
-.botoes-nav a:hover{
-    transform: scale(1.15);
-    color: var(--cor-destaque);
-    animation: ;
+.botoes-nav a::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: -2px;
+    background: linear-gradient(to right, var(--cor-destaque), #a300c3);
+    left: 0;
+    transition: width 0.6s ease;
+    border-radius: 50%;
+}
 
+.botoes-nav a:hover::after{
+    width: 100%;
+}
+
+.botoes-nav a:hover{
+    transform: scale(1.1);
+    color: var(--cor-destaque);
+    
 }
 
 .botoes-nav-container{
@@ -224,7 +243,7 @@ body{
 .secaoSobre {
     display: flex;
     justify-content: space-around;
-    padding-top: 3%;
+    padding-top: 5%;
 
 }
 
@@ -245,7 +264,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding: 5%;
 }
 
 .botao-curriculo button{
@@ -271,6 +290,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    padding-top: 5%;
 }
 
 .tecnicas-icones svg{
@@ -288,7 +308,6 @@ body{
 .habilidades-tecnicas h1{
     font-size: 50px;
     text-align: center;
-    padding-top: 200px;
 }
 
 .tecnicas-icones{
@@ -395,10 +414,14 @@ body{
     grid-column: 2;
 }
 
+.secaoProjetos{
+    padding: 5%;
+}
+
 .projetos-container h1{
     font-size: 50px;
     text-align: center;
-    padding-top: 200px;
+    padding-bottom: 50px;
 }
 
 .grid-projetos{
