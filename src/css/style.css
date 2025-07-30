@@ -82,6 +82,10 @@ body{
     position: relative;
 }
 
+.botao-tema.ativo button{
+    background-color: #fff  
+}
+
 .botao-tema button{
     z-index: 1;
     padding: 16px 35px;
@@ -109,6 +113,7 @@ body{
 
 .botao-tema.ativo .bolinha-botao{
     left: 43%;
+    background-color: var(--cor-destaque);
 }
 
 .secaoApresentacao{
@@ -205,6 +210,7 @@ body{
     gap: 30px;
     padding-left: 6px;
     padding-top: 35px;
+    overflow: visible;
 }
 
 .botoes-CTA .botao{
@@ -221,7 +227,7 @@ body{
 
 .botoes-CTA button:hover{
     background: var(--cor-botao-hover);
-    transform: scale(1.10);
+    transform: scale(1.1);
     box-shadow: 0px 0px 15px var(--cor-destaque);
 }
 
@@ -271,6 +277,12 @@ body{
     justify-content: center;
     align-items: center;
     padding: 5%;
+    padding-top: 1%;
+}
+
+.botao-curriculo a{
+    text-decoration: none;
+    color: var(--cor-texto)
 }
 
 
@@ -558,7 +570,7 @@ body{
 }
 
 .contato-bloco{
-    width: 10%;
+    width: 13%;
     align-items: center;
     text-align: center;
     flex-direction: column;
